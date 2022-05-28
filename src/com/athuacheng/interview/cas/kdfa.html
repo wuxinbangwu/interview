@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function calc1() {
+        var gongji1 = document.getElementById("numm1");//获取攻击力
+        var baoji1 = document.getElementById("numm2");//获取暴击
+        var baoshang1 = document.getElementById("numm3");//获取爆伤
+        var yuansu1 = document.getElementById("numm4");//获取元素伤害
+        var wushang1 = document.getElementById("numm5");//获取元素伤害
+        var wulibili = document.getElementById("wuliquanzhong");//获取物理权重
+        var yuansubili = document.getElementById("yuansuquanzhong");//获取元素权重
+        res = (change
+                (
+                        gongji1.value) *
+                        (change(baoji1.value) * 0.01) *
+                        (1 + change(baoshang1.value) * 0.01) *
+                        (1 + change(wushang1.value) * 0.01) +
+                        change(gongji1.value) *
+                        (1 - change(baoji1.value) * 0.01) *
+                        (1 + change(wushang1.value) * 0.01)
+                ) *
+                (change(wulibili.value) * 0.01) +
+                (
+                        change(gongji1.value) *
+                        (change(baoji1.value) * 0.01) *
+                        (1 + change(baoshang1.value) * 0.01) *
+                        (1 + change(yuansu1.value) * 0.01) +
+                        change(gongji1.value) *
+                        (1 - change(baoji1.value) * 0.01) *
+                        (1 + change(yuansu1.value) * 0.01)) *
+                (change(yuansubili.value) * 0.01);
+    }
+</script>
+</html>
