@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class CASDemo {
     public static void main(String[] args) {
         System.out.println("进入主方法");
+        System.out.println("hot-fix test");
         AtomicInteger atomicInteger = new AtomicInteger(5);
         System.out.println(atomicInteger.compareAndSet(5, 23) + ":" + atomicInteger.get());
         System.out.println(atomicInteger.compareAndSet(5, 88) + ":" + atomicInteger.get());
